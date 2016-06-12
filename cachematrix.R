@@ -1,5 +1,5 @@
 ## Inverting matrices
-## Cash data 
+## Cache data 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   
@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
   list( set=set, get=get, setinv=setinv, getinv=getinv )
 }
 
-## Invert matrices using cashed data
+## Invert matrices using cached data
 cacheSolve <- function(x=matrix(), ...) {
   m <- x$getinv()  
   if( !is.null(m) ){ #check if the matrix is cached
